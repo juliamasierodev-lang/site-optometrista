@@ -190,40 +190,53 @@ footer {
 
 }
 
-/* WHATSAPP */
+/* BOTÃO WHATS FIXO */
 .whatsapp-button {
     position: fixed;
     bottom: 20px;
     right: 20px;
 
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    width: 60px;
+    height: 60px;
 
     background-color: #25D366;
-    color: white;
-    padding: 12px 18px;
-    border-radius: 50px;
+    border-radius: 50%;
 
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     transition: 0.3s;
 
-    z-index: 999;
-    overflow: hidden;
+    z-index: 9999;
 }
 
 .whatsapp-button img {
-    width: 22px;
-    height: 22px;
-    object-fit: contain;
-    display: block;
+    width: 28px;
+    height: 28px;
 }
 
 .whatsapp-button:hover {
-    background-color: #1ebe5d;
-    transform: scale(1.05);
+    transform: scale(1.1);
+}
+
+/* BOTÃO DENTRO DO CONTATO */
+.btn-contato {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+
+    background-color: #198754;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn-contato:hover {
+    background-color: #157347;
 }
